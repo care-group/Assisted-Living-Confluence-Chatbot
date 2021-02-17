@@ -102,13 +102,12 @@ class NEW_BOT(Bot):
         #here, deal with the NLU
 
         sock1.sendall(Input.encode())#send message
-        print('Boobies\n')
             
         #connection, client_address = sock2.accept()
         print('[OUTPUT_SIMULATE] Connection from: ', client_address)
         data = "default"
         data = connection.recv(256).decode()#recieve message  
-        print('Knockers\n')
+        
         print(data)
         self.response.result = data#the result from the NLU will be passed on to the thingy
 
